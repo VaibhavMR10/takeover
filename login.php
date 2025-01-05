@@ -37,4 +37,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p style="color: red;"><?= htmlspecialchars($error) ?></p>
     <?php endif; ?>
     <form action="login.php" method="POST">
-        <label
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
